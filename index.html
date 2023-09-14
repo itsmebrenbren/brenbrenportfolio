@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us"> <!--I added some fun colors and things, I hope that's okay. I learned all of this from Ws School readings on html-->
     <head>
         <style>
             body {
@@ -16,11 +16,15 @@
             background-image:      -o-linear-gradient(top, #383950, #ffb4a2);
             background-image:         linear-gradient(to bottom, #383950, #ffb4a2);
             font-family: 'Gill Sans';background-color: #383950;}
+            /* learned gradient from Stack Overflow. My earlier attempts were just using one of these lines, but none were working in my browser.
+            It turns out you need to do multiple lines covering all of the options so it can be more responsive. Height also needs to be set at 100%
+            so that the gradient continues for the full page. Otherwise it will do a line of repeating gradients as you move down the page.
+            (which I guess is pretty cool, if that's your thing).*/
             h1 {color: #ffcdb2;}
-            .image-container {text-align:center;}
             h2 {color: #e5989b;}
             h3 {color:#383950}
             p {color:#ffb4a2;font-family: Georgia, 'Times New Roman', Times, serif;}
+            .image-container {text-align:center;}
         </style>
     </head>
     <body>
@@ -36,8 +40,5 @@
         <div class=".image-container">
         <img src="Cat-like fren_4in copy.jpg" alt="a drawing of a cat creature saying 'hey fren'" style="width: 500px; height: 500px;padding-top: 20%;">
         </div>
-        <!--I added some fun colors and things, I hope that's okay. 
-            I learned all of this from doing the W3 school readings for html. 
-            (except for the gradient bit which I learned from stack overflow)-->
     </body>
 </html>
