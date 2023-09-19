@@ -12,16 +12,16 @@
             background-image:      -o-linear-gradient(top, #383950, #ffb4a2);
             background-image:         linear-gradient(to bottom, #383950, #ffb4a2);
             background-attachment: fixed;}
+            /* learned gradient from Stack Overflow. My earlier attempts were just using one of these lines, but none were working in my browser.
+            It turns out you need to do multiple lines covering all of the options so it can be more responsive. Height also needs to be set at 100%
+            so that the gradient continues for the full page. Otherwise it will do a line of repeating gradients as you move down the page.
+            (which I guess is pretty cool, if that's your thing).*/
             @font-face {
                 font-family: righteous;
                 src: url(Righteous-Regular.ttf);}
             @font-face {
                 font-family: ErikasBuero;
                 src: url(ErikasBuero.ttf);}
-            /* learned gradient from Stack Overflow. My earlier attempts were just using one of these lines, but none were working in my browser.
-            It turns out you need to do multiple lines covering all of the options so it can be more responsive. Height also needs to be set at 100%
-            so that the gradient continues for the full page. Otherwise it will do a line of repeating gradients as you move down the page.
-            (which I guess is pretty cool, if that's your thing).*/
             h1 {
                 color: #ffcdb2; font-family: righteous;font-size: 6vw;}
             h2 {
@@ -39,13 +39,15 @@
     <body>
         <h1 style="text-align: right; margin-top: 10%; margin-bottom: 0%; padding-bottom: 0%;">Brenna Baker</h1>
         <h2 style="text-align: right; margin-top: 0%;padding-top: 0%;">welcome to my portfolio</h2>" 
-        <div>
-        <img src="PortfolioPic1.jpg" alt="picture of smiling woman" style="float: left; width: 216px; height: 288px; margin-right: 5%;">
+        <div style="border: 3px solid #ffcdb2; border-radius: 12px; padding: 3% 5% 8% 5%; max-width: 800px">
+            <img src="PortfolioPic1.jpg" alt="picture of smiling woman" style="float: left; width: 216px; height: 288px; margin-right: 5%;">
+            <h3 style="text-align: left; margin-bottom: 0%; padding-top: 8%; padding-bottom: 0%;">about me</h3>
+            <p style="color: #383950;text-align: left; margin-top: 0%; padding-top: 0%; padding-bottom: 8%;">
+                I have a dog named Scuba who is a one-year-old pit bull mix.
+                <br> My husband and I are training her to climb the white mountains with us.
+            </p>
         </div>
-        <h3 style="text-align: left; margin-bottom: 0%;padding-top: 8%; padding-bottom: 0%;">about me</h3>
-        <p style="color: #383950;text-align: left; margin-top: 0%;padding-top: 0%;padding-bottom: 8%;">I have a dog named Scuba who is a one-year-old pit bull mix. 
-            <br> My husband and I are training her to climb the white mountains with us.</p>
-        <div class="imagecontainer" style="padding-top: 20%;">
+        <div class="imagecontainer" style="padding-top: 20%; border: none;">
             <img src="Cat-like fren_4in copy.jpg" alt="pic of cat-like fren saying 'hey fren'" style="width: 500px; height: 500px;">
         </div>
     </body>
