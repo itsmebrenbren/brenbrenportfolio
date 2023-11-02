@@ -1,0 +1,36 @@
+body {
+  height: 100%;
+  margin: 0% 20% 10% 20%;
+  background-color: #383950;
+  background-image: -webkit-gradient(linear, top, bottom, from(#383950), to(#ffb4a2));
+  background-image: -webkit-linear-gradient(top, #383950, #ffb4a2);
+  background-image:    -moz-linear-gradient(top, #383950, #ffb4a2);
+  background-image:      -o-linear-gradient(top, #383950, #ffb4a2);
+  background-image:         linear-gradient(to bottom, #383950, #ffb4a2);
+  background-attachment: fixed;}
+
+  @font-face {
+      font-family: righteous;
+      src: url(./Fonts/Righteous-Regular.ttf);}
+
+  @font-face {
+      font-family: ErikasBuero;
+      src: url(./Fonts/ErikasBuero.ttf);}
+
+  h1 {
+      color: #ffcdb2; font-family: righteous;font-size: 6vw;}
+
+  h2 {
+      color: #e5989b; font-family: ErikasBuero;font-size: 2vw;}
+
+  h3 {
+      color: #383950; font-family: ErikasBuero;font-size: 2vw;}
+
+  p {
+      color: #ffb4a2; font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+  img {
+      border-radius: 50%;}
+      
+  .imagecontainer {
+      text-align: center;}

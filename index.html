@@ -1,44 +1,16 @@
 <!DOCTYPE html>
-<html lang="en-us"> <!--I added some fun colors and things, I hope that's okay. I learned all of this from Ws School readings on html-->
+<html lang="en-us">
     <head>
-        <style>
-            body {
-            height: 100%;
-            margin: 0% 20% 10% 20%;
-            background-color: #383950;
-            background-image: -webkit-gradient(linear, top, bottom, from(#383950), to(#ffb4a2));
-            background-image: -webkit-linear-gradient(top, #383950, #ffb4a2);
-            background-image:    -moz-linear-gradient(top, #383950, #ffb4a2);
-            background-image:      -o-linear-gradient(top, #383950, #ffb4a2);
-            background-image:         linear-gradient(to bottom, #383950, #ffb4a2);
-            background-attachment: fixed;}
-            /* learned gradient from Stack Overflow. My earlier attempts were just using one of these lines, but none were working in my browser.
-            It turns out you need to do multiple lines covering all of the options so it can be more responsive. Height also needs to be set at 100%
-            so that the gradient continues for the full page. Otherwise it will do a line of repeating gradients as you move down the page.
-            (which I guess is pretty cool, if that's your thing).*/
-            @font-face {
-                font-family: righteous;
-                src: url(./Fonts/Righteous-Regular.ttf);}
-            @font-face {
-                font-family: ErikasBuero;
-                src: url(./Fonts/ErikasBuero.ttf);}
-            h1 {
-                color: #ffcdb2; font-family: righteous;font-size: 6vw;}
-            h2 {
-                color: #e5989b; font-family: ErikasBuero;font-size: 2vw;}
-            h3 {
-                color: #383950; font-family: ErikasBuero;font-size: 2vw;}
-            p {
-                color: #ffb4a2; font-size: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-            img {
-                border-radius: 50%;}
-            .imagecontainer {
-                text-align: center;}
-        </style>
+        <title>Brenna Baker's Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" type = "text/css" href = "styles.css">
     </head>
     <body>
-        <h1 style="text-align: right; margin-top: 10%; margin-bottom: 0%; padding-bottom: 0%;">Brenna Baker</h1>
-        <h2 style="text-align: right; margin-top: 0%; padding-top: 0%;">welcome to my portfolio</h2>" 
+        <div class = "container-fluid">
+            <h1>Brenna Baker</h1>
+            <h2 style="text-align: right; margin-top: 0%; padding-top: 0%;">welcome to my portfolio</h2>" 
+        </div>
         <div style="border: 3px solid #ffcdb2; border-radius: 12px; padding: 3% 5% 8% 5%; max-width: 800px">
             <img src="./Images/PortfolioPic1.jpg" alt="picture of smiling woman" style="float: left; width: 216px; height: 288px; margin-right: 5%;">
             <h3 style="text-align: left; margin-bottom: 0%; padding-top: 8%; padding-bottom: 0%;">about me</h3>
