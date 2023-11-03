@@ -35,29 +35,21 @@ export default class Example extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">LinkedIn</NavLink>
+                <NavLink href="#" className = "navtext text-wax-flower">LinkedIn</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">GitHub</NavLink>
+                <NavLink href="#" className = "navtext text-wax-flower">GitHub</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Resume</NavLink>
+                <NavLink href="#" className = "navtext text-wax-flower">Resume</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Projects
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
+                <DropdownToggle nav caret className = "navtext text-wax-flower">Projects</DropdownToggle>
+                <DropdownMenu right className = "bg-wax-flower border-wax-flower">
+                  <DropdownItem className = "navtext text-salt-box">Dog-a-doo card games</DropdownItem>
+                  <DropdownItem className = "navtext text-salt-box">Pacman Thing</DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
+                  <DropdownItem className = "navtext text-salt-box">Reset</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
