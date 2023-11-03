@@ -6,7 +6,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -29,22 +28,24 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="salt-box" light expand="md">
+        <Navbar color="salt-box" expand="md">
           <NavbarBrand href="/" className = "menu text-romantic">Brenna Baker</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#" className = "navtext text-wax-flower">LinkedIn</NavLink>
+                <button className = "button2">LinkedIn</button>
               </NavItem>
               <NavItem>
-                <NavLink href="#" className = "navtext text-wax-flower">GitHub</NavLink>
+                <button className = "button2">GitHub</button>
               </NavItem>
               <NavItem>
-                <NavLink href="#" className = "navtext text-wax-flower">Resume</NavLink>
+                <button className = "button2">Resume</button>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret className = "navtext text-wax-flower">Projects</DropdownToggle>
+                <button nav caret className = "button2">
+                    <DropdownToggle nav caret className = "navtext text-wax-flower">Projects</DropdownToggle>
+                </button>
                 <DropdownMenu right className = "bg-wax-flower border-wax-flower">
                   <DropdownItem className = "navtext text-salt-box">Dog-a-doo card games</DropdownItem>
                   <DropdownItem className = "navtext text-salt-box">Pacman Thing</DropdownItem>

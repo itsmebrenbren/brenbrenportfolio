@@ -64,10 +64,10 @@ function App() {
           <Col className = "justify-content-around">
             <Card color = "salt-box" className = "border-salt-box">
               <CardBody>
-                <CardTitle className = "h3 text-wax-flower">Dog-a-doo Card Games</CardTitle>
-                <CardSubtitle className = "p text-romantic">Play some card games against the computer</CardSubtitle>
+                <CardTitle className = "h3 text-wax-flower text-center">Dog-a-doo Card Games</CardTitle>
+                <CardSubtitle className = "p text-romantic text-center">Play card games against the computer</CardSubtitle>
                 <img src = {DogPic} className = "img-fluid rounded float-start" alt = "cat-like fren says hi"/>
-                <CardText></CardText>
+                <CardText className = "p text-romantic"></CardText>
                 <Button>Play Games</Button>
               </CardBody>
             </Card>
