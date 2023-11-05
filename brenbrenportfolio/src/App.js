@@ -12,9 +12,12 @@ import {
   CardBody,
   CardText
 } from "reactstrap";
+//data
+import { dogCard } from './Data/Projects';
 //container components
 import Header from './visuals/Header';
 import Box from './visuals/Box';
+import ProjectCard from './visuals/ProjectCard';
 //html components
 import P from './visuals/P';
 import H3 from './visuals/H3';
@@ -27,6 +30,7 @@ import Button from './visuals/Button';
 
 
 function App() {
+
   return (
     <div>
       <Container className = "container-fluid pt-3 d-flex justify-content-around">
@@ -73,6 +77,7 @@ function App() {
             </Card>
           </Col>
           <Col className = "justify-content-around">
+            <ProjectCard title = {dogCard.title} subtitle = {dogCard.subtitle} img = {dogCard.img} button = {dogCard.button}></ProjectCard>
           </Col>
           <Col className = "justify-content-around">
           </Col>

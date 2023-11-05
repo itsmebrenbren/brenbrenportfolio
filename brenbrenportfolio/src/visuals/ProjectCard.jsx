@@ -5,6 +5,7 @@ import {
     CardBody,
     CardText
   } from "reactstrap";
+import Button from "./Button";
 
 export default function ProjectCard(props){
     return(
@@ -12,7 +13,7 @@ export default function ProjectCard(props){
             <CardBody>
                 <CardTitle className = "h3 text-wax-flower text-center">{ props.title }</CardTitle>
                 <CardSubtitle className = "p text-romantic text-center">{ props.subtitle }</CardSubtitle>
-                <img src = { DogPic } className = "img-fluid rounded float-start" alt = "cat-like fren says hi"/>
+                <img src = { props.img } className = "img-fluid rounded float-start" alt = "cat-like fren says hi"/>
                 <CardText className = "p text-romantic"></CardText>
                 <Button>{ props.button }</Button>
             </CardBody>
