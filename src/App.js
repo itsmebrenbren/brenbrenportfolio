@@ -27,6 +27,7 @@ import DogPic from './Images/Cat-like fren_4in copy.jpg';
 import Menu from './visuals/Menu';
 //other useful components
 import Button from './visuals/Button';
+import ProjectList from './components/ProjectList';
 
 
 function App() {
@@ -64,26 +65,7 @@ function App() {
       <Menu></Menu>
       <Container className = "pt-3"></Container>
       <Container>
-        <Row>
-          <Col className = "justify-content-around">
-            <Card color = "salt-box" className = "border-salt-box">
-              <CardBody>
-                <CardTitle className = "h3 text-wax-flower text-center">Dog-a-doo Card Games</CardTitle>
-                <CardSubtitle className = "p text-romantic text-center">Play card games against the computer</CardSubtitle>
-                <img src = {DogPic} className = "img-fluid rounded float-start" alt = "cat-like fren says hi"/>
-                <CardText className = "p text-romantic"></CardText>
-                <Button>Play Games</Button>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col className = "justify-content-around">
-            <ProjectCard title = {dogCard.title} subtitle = {dogCard.subtitle} img = {dogCard.img} button = {dogCard.button}></ProjectCard>
-          </Col>
-          <Col className = "justify-content-around">
-          </Col>
-          <Col className = "justify-content-around">
-          </Col>
-        </Row>
+          <ProjectList/>
       </Container>
     </div>
   );
