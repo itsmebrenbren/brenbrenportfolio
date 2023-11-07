@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Collapse,
   Navbar,
@@ -8,44 +8,49 @@ import {
   NavItem,
  } from 'reactstrap';
 
-export default class Menu extends React.Component {
-  constructor(props) {
-    super(props);
+export default function Menu({ onAboutMeOpen, onProjectsOpen, onResumeOpen, onContactOpen }) {
+  const [navOpen, setNavOpen] = useState(false);
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
+  const toggleAboutMe = () => {
+    onAboutMeOpen();
   }
 
-  
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
+  const toggleProjects = () => {
+    onProjectsOpen();
   }
 
-  render() {
+  const toggleResume = () => {
+    onResumeOpen();
+  }
+
+  const toggleContact = () => {
+    onContactOpen();
+  }
+
+  const toggle = () => setNavOpen(!navOpen);
+
     return (
       <div>
         <Navbar color = "salt-box" expand="md" className = "menu fixed-bottom">
           <NavbarBrand href = "/" className = "brand text-romantic">Brenna Baker</NavbarBrand>
-          <NavbarToggler onClick = { this.toggle } />
-          <Collapse isOpen = { this.state.isOpen } navbar>
+          <NavbarToggler onClick = { toggle } />
+          <Collapse isOpen = { navOpen } navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <button className = "button2">Contact</button>
+                <button onClick = { toggleAboutMe } className = "button2">About Me</button>
               </NavItem>
               <NavItem>
-                <button className = "button2">Resume</button>
+                <button onClick = { toggleProjects } className = "button2">Projects</button>
               </NavItem>
               <NavItem>
-                <button className = "button2">Projects</button>
+                <button onClick = { toggleResume } className = "button2">Resume</button>
+              </NavItem>
+              <NavItem>
+                <button onClick = { toggleContact } className = "button2">Contact</button>
               </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
       </div>
     )
-  }
 }

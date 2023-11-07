@@ -7,6 +7,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import React, { useState } from 'react';
 //container components
 import Header from './visuals/Header';
 import Box from './visuals/Box';
@@ -19,39 +20,77 @@ import Menu from './visuals/Menu';
 import AboutMe from './visuals/AboutMe';
 import Video from './visuals/Video';
 import ProjectList from './components/ProjectList';
+import Resume from './visuals/Resume';
 
 
 function App() {
+  const [aboutMeOpen, setAboutMeOpen] = useState(false);
+  const [projectsOpen, setProjectsOpen] = useState(false);
+  const [resumeOpen, setResumeOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
+
+  const handleAboutMeOpen = () => {
+    setAboutMeOpen(!aboutMeOpen);
+  }
+
+  const handleProjectsOpen = () => {
+    setProjectsOpen(!projectsOpen);
+  }
+
+  const handleResumeOpen = () => {
+    setResumeOpen(!resumeOpen);
+  }
+
+  const handleContactOpen = () => {
+    setContactOpen(!contactOpen);
+  }
 
   return (
     <div>
-      <Container className = "container-fluid pt-3 d-flex justify-content-around">
+      <Container className = "container-fluid pt-5 d-flex justify-content-around">
         <Header/>
       </Container>
-      <Container className = "pt-3"></Container>
-      <Container>
-        <Row className = "justify-content-around">
-          <Col className = "col-6 justify-content-around">
-            <AboutMe/>
-          </Col>
-          <Col className = "col-6 justify-content-around">
-            <Video/>
-          </Col>
-        </Row>
-      </Container>
-      <Container className = "pt-3"></Container>
-      <Menu></Menu>
-      <Container className = "pt-3"></Container>
-      <Container>
-          <ProjectList/>
-      </Container>
-      <Container className = "pt-5"></Container>
-      <Row>
+      <Container className = "container-fluid pt-5"></Container>
+      <Menu 
+        onAboutMeOpen = { handleAboutMeOpen } 
+        onProjectsOpen = { handleProjectsOpen } 
+        onResumeOpen = { handleResumeOpen } 
+        onContactOpen = { handleContactOpen }
+        >
+      </Menu>
+      {aboutMeOpen &&
+            <Container>
+            <Row className = "justify-content-around">
+              <Col className = "col-6 justify-content-around">
+                <AboutMe/>
+              </Col>
+              <Col className = "col-6 justify-content-around">
+                <Video/>
+              </Col>
+            </Row>
+            <Container className = "container-fluid pt-5"></Container>
+          </Container>
+      }
+      {projectsOpen &&
+        <Container>
+            <ProjectList/>
+            <Container className = "container-fluid pt-5"></Container>
+        </Container>
+      }
+      {resumeOpen &&
+        <Container>
+          <Resume pdf = "./Images/Langille Resume ATS 2023.pdf" />
+        </Container>
+      }
+      {contactOpen &&
+        <Container>
         <Col></Col>
         <Contact/>
         <Col></Col>
-      </Row>
-      <Container className = "pt-5"></Container>
+        <Container className = "container-fluid pt-5"></Container>
+        </Container>
+      }
+      <Container className = "container-fluid pt-5"></Container>
     </div>
   );
 }
