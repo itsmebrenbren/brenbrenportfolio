@@ -8,11 +8,11 @@ import Pic from '../Images/PortfolioPic1.jpg';
 
 export default function AboutMe(){
     return(
-        <Card className = "card border-black bg-romantic">
-            <CardHeader className = "h6 text-black text-center bg-brandy-rose">About Me</CardHeader>
-            <CardBody color = "romantic">
+        <Card className = "card2 border-black bg-salt-box">
+            <CardHeader className = "h6 text-black text-center bg-wax-flower">About Me</CardHeader>
+            <CardBody>
                 <img src = { Pic } className = "img-fluid rounded float-start" alt = "a women smiling"></img>
-                <CardText className = "p text-dark-boi">
+                <CardText className = "p text-romantic">
                     I am a passionate software engineer who embarked on a transformative journey 
                     into the world of technology through MIT's XPRO coding bootcamp.
                     With a strong foundation in the essentials of programming and a zeal for continuous learning, 

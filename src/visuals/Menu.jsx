@@ -28,16 +28,13 @@ export default class Menu extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color = "salt-box" expand="md" className = "menu">
+        <Navbar color = "salt-box" expand="md" className = "menu fixed-bottom">
           <NavbarBrand href = "/" className = "brand text-romantic">Brenna Baker</NavbarBrand>
           <NavbarToggler onClick = { this.toggle } />
           <Collapse isOpen = { this.state.isOpen } navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <button className = "button2">LinkedIn</button>
-              </NavItem>
-              <NavItem>
-                <button className = "button2">GitHub</button>
+                <button className = "button2">Contact</button>
               </NavItem>
               <NavItem>
                 <button className = "button2">Resume</button>

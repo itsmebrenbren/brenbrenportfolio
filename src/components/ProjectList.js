@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "reactstrap";
+import { Col, Row, Container } from "reactstrap";
 import ProjectCard from "../visuals/ProjectCard";
 import { Project } from "../Data/Projects"; // Import the Project array
 

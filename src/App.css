@@ -85,6 +85,20 @@ img {
   transform: translateY(-4px) translateX(-4px);
 }
 
+.card2 {
+  transition: all linear;
+  cursor: pointer;
+  box-shadow: 5px 5px #ffcdb3,
+    6px 6px black;
+}
+
+.card2:hover {
+  box-shadow: 9px 9px #ffcdb3,
+    10px 10px black;
+  transform: translateY(-4px) translateX(-4px);
+}
+
+
 .button {
   background-color: #b5838d;
   color: black;

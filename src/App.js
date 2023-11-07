@@ -17,6 +17,7 @@ import P from './visuals/P';
 import Menu from './visuals/Menu';
 //other useful components
 import AboutMe from './visuals/AboutMe';
+import Video from './visuals/Video';
 import ProjectList from './components/ProjectList';
 
 
@@ -27,15 +28,14 @@ function App() {
       <Container className = "container-fluid pt-3 d-flex justify-content-around">
         <Header/>
       </Container>
+      <Container className = "pt-3"></Container>
       <Container>
         <Row className = "justify-content-around">
           <Col className = "col-6 justify-content-around">
             <AboutMe/>
           </Col>
-          <Col>
-            <Box>
-              <P>YouTube video would go here</P>
-            </Box>
+          <Col className = "col-6 justify-content-around">
+            <Video/>
           </Col>
         </Row>
       </Container>
@@ -45,7 +45,7 @@ function App() {
       <Container>
           <ProjectList/>
       </Container>
-      <Container className = "pt-3"></Container>
+      <Container className = "pt-5"></Container>
       <Row>
         <Col></Col>
         <Contact/>
