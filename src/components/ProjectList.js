@@ -7,12 +7,13 @@ export default function ProjectList() {
   return (
     <Row>
       {Project.map((project, index) => (
-        <Col key={index} className="justify-content-around">
+        <Col key = { index } className = "col-sm-3 justify-content-around">
           <ProjectCard
-            title={project.title}
-            subtitle={project.subtitle}
-            img={project.img}
-            button={project.button}
+            title = { project.title }
+            subtitle = { project.subtitle }
+            img = { project.img }
+            alt = { project.alt }
+            button = { project.button }
           />
         </Col>
       ))}

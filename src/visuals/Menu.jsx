@@ -6,12 +6,9 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+ } from 'reactstrap';
 
-export default class Example extends React.Component {
+export default class Menu extends React.Component {
   constructor(props) {
     super(props);
 
@@ -20,18 +17,21 @@ export default class Example extends React.Component {
       isOpen: false
     };
   }
+
+  
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
+
   render() {
     return (
       <div>
-        <Navbar color="salt-box" expand="md">
-          <NavbarBrand href="/" className = "menu text-romantic">Brenna Baker</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
+        <Navbar color = "salt-box" expand="md" className = "menu">
+          <NavbarBrand href = "/" className = "brand text-romantic">Brenna Baker</NavbarBrand>
+          <NavbarToggler onClick = { this.toggle } />
+          <Collapse isOpen = { this.state.isOpen } navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <button className = "button2">LinkedIn</button>
@@ -42,21 +42,13 @@ export default class Example extends React.Component {
               <NavItem>
                 <button className = "button2">Resume</button>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <button nav caret className = "button2">
-                    <DropdownToggle nav caret className = "navtext text-wax-flower">Projects</DropdownToggle>
-                </button>
-                <DropdownMenu right className = "bg-wax-flower border-wax-flower">
-                  <DropdownItem className = "navtext text-salt-box">Dog-a-doo card games</DropdownItem>
-                  <DropdownItem className = "navtext text-salt-box">Pacman Thing</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem className = "navtext text-salt-box">Reset</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <button className = "button2">Projects</button>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
       </div>
-    );
+    )
   }
 }

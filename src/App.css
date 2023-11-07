@@ -16,8 +16,13 @@ body {
   }
 
 @font-face {
-    font-family: ErikasBuero;
-    src: url(Fonts/ErikasBuero.ttf) format('truetype');
+    font-family: Chicago;
+    src: url(Fonts/ChicagoFLF.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: VCR;
+    src: url(Fonts/VCR_OSD_MONO_1.001.ttf) format('truetype');
   }
 
 .h1 {
@@ -25,11 +30,12 @@ body {
   }
 
 .h2 {   
-    font-family: ErikasBuero;
+    font-family: Chicago;
   }
 
 .h3 {
-    font-family: ErikasBuero;
+    font-family: Chicago;
+
   }
 
 .p {
@@ -54,62 +60,108 @@ img {
   margin: 5%;
 }
 
-.menu {
+.brand {
   font-family: righteous;
+}
+
+.menu {
+  border: 1px solid black;
 }
 
 .navtext {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.card {
+  transition: all linear;
+  cursor: pointer;
+  box-shadow: 5px 5px #6d6875,
+    6px 6px black;
+}
+
+.card:hover {
+  box-shadow: 9px 9px #6d6875,
+    10px 10px black;
+  transform: translateY(-4px) translateX(-4px);
+}
+
 .button {
   background-color: #b5838d;
-  color: #ffcdb3;
+  color: black;
   text-align: center;
-  font-family: righteous;
-  font-size: 20px;
+  font-family: Chicago;
+  font-size: 15px;
   width: auto;
   padding: 10px 10px;
   border-radius: 4px;
-  border: 2px solid #b5838d;
+  border: 1px solid black;
   margin: 5px;
-  transition: all 0.5s;
+  transition: all linear;
   cursor: pointer;
-  box-shadow: 0px 0px #ffcdb3;
+  box-shadow: 0px 0px #6d6875,
+  0px 0px black;
 }
 
 .button:hover {
-  box-shadow: 0 9px #ffcdb3;
-  transform: translateY(-4px);
+  box-shadow: 5px 5px #6d6875,
+    6px 6px black;
+  transform: translateY(-4px) translateX(-4px);
 }
 
 .button:active {
-  box-shadow: 0px 0px #ffcdb3;
-  transform: translateY(4px);
+  box-shadow: 0px 0px #6d6875,
+    0px 0px black;
+  transform: translateY(4px) translateX(4px);
 }
 
 .button2 {
   background-color: #6d6875;
   color: #ffb4a2;
   text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+  font-family: Chicago;
+  font-size: px;
   width: auto;
   padding: 10px 10px;
   border-radius: 4px;
   border: 2px solid #ffcdb3;
   margin: 5px;
-  transition: all 0.5s;
+  transition: all linear;
   cursor: pointer;
-  box-shadow: 0px 0px #ffcdb3;
+  box-shadow: 3px 3px #ffcdb3,
+    4px 4px black;
 }
 
 .button2:hover {
-  box-shadow: 0 9px #ffcdb3;
-  transform: translateY(-4px);
+  box-shadow: 7px 7px #ffcdb3,
+    8px 8px black;
+  transform: translateY(-4px) translateX(-4px);
 }
 
 .button2:active {
-  box-shadow: 0px 0px #ffcdb3;
-  transform: translateY(4px);
+  box-shadow: 0px 0px #ffcdb3,
+    0px 0px black;
+  transform: translateY(4px) translateX(4px);
+}
+
+
+.dropdown {
+  position: absolute;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #6d6875;
+  border-radius: 4px;
+}
+
+.dropdown li {
+  color:#ffcdb3;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown li:hover {
+  background-color: #ffb4a2;
+}
+
+.dropdown:hover {
+  display: block;
 }
