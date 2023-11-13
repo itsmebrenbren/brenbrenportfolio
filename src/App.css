@@ -38,6 +38,10 @@ body {
 
   }
 
+.h6 {
+  font-family: Chicago;
+}
+
 .p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
@@ -47,8 +51,19 @@ img {
   }
 
 .imagecontainer {
-    text-align: center;
+    height: 200px;
+    width: 200px;
   }
+
+.imagebox {
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: auto;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+}
 
 .box {
   display: flex;
@@ -65,11 +80,13 @@ img {
 }
 
 .menu {
+  background-color: #6d6875;
   border: 1px solid black;
 }
 
 .navtext {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Chicago;
+  font-size: 10px;
 }
 
 .card {
@@ -130,14 +147,14 @@ img {
 
 .button2 {
   background-color: #6d6875;
-  color: #ffb4a2;
+  color: #ffcdb3;
   text-align: center;
   font-family: Chicago;
   font-size: 12px;
   width: auto;
   padding: 10px 10px;
   border-radius: 4px;
-  border: 2px solid #ffcdb3;
+  border: 1px solid black;
   margin: 5px;
   transition: all linear;
   cursor: pointer;

@@ -31,18 +31,31 @@ function App() {
 
   const handleAboutMeOpen = () => {
     setAboutMeOpen(!aboutMeOpen);
+    if(projectsOpen) setProjectsOpen(false);
+    if(resumeOpen) setResumeOpen(false);
+    if(contactOpen) setContactOpen(false);
   }
 
   const handleProjectsOpen = () => {
     setProjectsOpen(!projectsOpen);
+    if(aboutMeOpen) setAboutMeOpen(false);
+    if(resumeOpen) setResumeOpen(false);
+    if(contactOpen) setContactOpen(false);
   }
 
   const handleResumeOpen = () => {
     setResumeOpen(!resumeOpen);
+    if(aboutMeOpen) setAboutMeOpen(false);
+    if(projectsOpen) setProjectsOpen(false);
+    if(contactOpen) setContactOpen(false);
+
   }
 
   const handleContactOpen = () => {
     setContactOpen(!contactOpen);
+    if(aboutMeOpen) setAboutMeOpen(false);
+    if(projectsOpen) setProjectsOpen(false);
+    if(resumeOpen) setResumeOpen(false);
   }
 
   return (
@@ -72,7 +85,7 @@ function App() {
           </Container>
       }
       {projectsOpen &&
-        <Container>
+        <Container className = "justify-content-around">
             <ProjectList/>
             <Container className = "container-fluid pt-5"></Container>
         </Container>

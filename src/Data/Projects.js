@@ -1,10 +1,14 @@
-import Dog from "../Images/Cat-like fren_4in copy.jpg";
+import Dog from "../Images/DogaDooCG_Piixel.png";
+import Cocktail from "../Images/CocktailBS.png";
+import Oven from "../Images/BrenBakesOven.png";
 
 // Initialize objects
 let dogCard = {};
 let pacman = {};
 let eye = {};
 let bus = {};
+let cocktail = {};
+let bakes = {};
 
 export const Project = [
     dogCard = {
@@ -12,7 +16,7 @@ export const Project = [
         subtitle: "Play dog-themed card games",
         img: Dog,
         alt: "playing card",
-        button: "Play Games"
+        button: "Play"
     },
     pacman = {
         title: "Pacman Exercise",
@@ -34,5 +38,19 @@ export const Project = [
         img: "#",
         alt: "bus",
         button: "Play"
+    },
+    cocktail = {
+        title: "currently working on: Cocktail Brainstorm",
+        subtitle: "tell us how you are feeling and we will suggest a cocktail",
+        img: Cocktail,
+        alt: "a brain in a cocktail glass",
+        button: "not available yet"
+    },
+    bakes = {
+        title: "currently working on: Brenbren Bakes",
+        subtitle: "a baking website showing my recipes",
+        img : Oven,
+        alt: "little oven cooking bread",
+        button: "not available yet"
     }
 ];

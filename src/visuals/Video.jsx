@@ -7,10 +7,10 @@ import {
 
 export default function Video(){
     return(
-        <Card className = "card2 border-black bg-salt-box">
-            <CardHeader className = "h6 text-black text-center bg-wax-flower">YouTube Video</CardHeader>
+        <Card className = "card border-black bg-romantic">
+            <CardHeader className = "h6 text-black text-center bg-brandy-rose">YouTube Video</CardHeader>
             <CardBody color = "romantic">
-                <CardText className = "p text-romantic">
+                <CardText className = "p text-dark-boi">
                     YouTube video would go here.
                 </CardText>
             </CardBody>
