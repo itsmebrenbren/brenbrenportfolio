@@ -23,6 +23,7 @@ export const Project = [
         subtitle: "an exercise manipulating the DOM",
         img: "#",
         alt: "pacmen floating around a screen",
+        progress: 100,
         button: "Play"
     },
     eye = {
@@ -30,6 +31,7 @@ export const Project = [
         subtitle: "",
         img: "#",
         alt: "eye",
+        progress: 100,
         button: "Play"
     },
     bus = {
@@ -37,20 +39,23 @@ export const Project = [
         subtitle: "",
         img: "#",
         alt: "bus",
+        progress: 100,
         button: "Play"
     },
     cocktail = {
-        title: "currently working on: Cocktail Brainstorm",
+        title: "Cocktail Brainstorm",
         subtitle: "tell us how you are feeling and we will suggest a cocktail",
         img: Cocktail,
         alt: "a brain in a cocktail glass",
+        progress: 15,
         button: "not available yet"
     },
     bakes = {
-        title: "currently working on: Brenbren Bakes",
+        title: "Brenbren Bakes",
         subtitle: "a baking website showing my recipes",
         img : Oven,
         alt: "little oven cooking bread",
+        progress: 25,
         button: "not available yet"
     }
 ];

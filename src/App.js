@@ -6,6 +6,7 @@ import {
   Container,
   Row,
   Col,
+  Card
 } from "reactstrap";
 import React, { useState } from 'react';
 //container components
@@ -21,6 +22,7 @@ import AboutMe from './visuals/AboutMe';
 import Video from './visuals/Video';
 import ProjectList from './components/ProjectList';
 import Resume from './visuals/Resume';
+import ProgressGauge from './visuals/ProgressGauge';
 
 
 function App() {
@@ -85,9 +87,8 @@ function App() {
           </Container>
       }
       {projectsOpen &&
-        <Container className = "justify-content-around">
+        <Container>
             <ProjectList/>
-            <Container className = "container-fluid pt-5"></Container>
         </Container>
       }
       {resumeOpen &&

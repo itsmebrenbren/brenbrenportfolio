@@ -47,6 +47,8 @@ body {
   }
 
 img {
+    height: 55px;
+    width: 55px;
     margin: 2%;
   }
 
