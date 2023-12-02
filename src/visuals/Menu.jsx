@@ -5,8 +5,7 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavbarText
+  NavItem
  } from 'reactstrap';
 
 export default function Menu({ onAboutMeOpen, onProjectsOpen }) {

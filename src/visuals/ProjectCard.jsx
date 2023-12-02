@@ -4,7 +4,11 @@ import {
     Collapse,
     CardSubtitle,
     CardBody,
-    CardHeader
+    CardHeader,
+    CardFooter,
+    Row,
+    Col,
+    Progress
   } from "reactstrap";
 
 export default function ProjectCard(props){
@@ -22,15 +26,25 @@ export default function ProjectCard(props){
             <Collapse isOpen = { isOpen }>
                 <CardBody color = "romantic">
                     <CardSubtitle className = "project-subtitle text-dark-boi text-center">{ props.subtitle }</CardSubtitle>
-                    <ul>
-                        {info.map((item)=>(
-                            <li className = "project-text text-dark-boi">{ item }</li>
-                        ))
+                    <Row className = "align-items-center"> 
+                        <Col md = "6" className = "d-flex justify-content-center">
+                        </Col>
+                        <Col md = "6" className = "d-flex justify-content-center">
+                            <ul>
+                                {info.map((item)=>(
+                                    <li className = "project-text text-dark-boi">{ item }</li>
+                                ))
 
-                        }
-                    </ul>
+                                }
+                            </ul>
+                        </Col>
+                    </Row>
                     <a href={props.link} target="_blank" rel="noopener noreferrer" className="button a">{ props.button }</a>
             </CardBody>
+            <CardFooter className = "bg-brandy-rose">
+                <h6 className = "h6 text-dark-boi">Progress:</h6>
+                <Progress value = { props.progress } color = "salt-box" className = "progress-bar bg-romantic"/>
+            </CardFooter>
             </Collapse>
         </Card>
     )

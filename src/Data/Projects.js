@@ -11,15 +11,6 @@ let cocktail = {};
 let bakes = {};
 
 export const Project = [
-    dogCard = {
-        title: "dog-a-doo card games",
-        subtitle: "Play dog-themed card games",
-        img: Dog,
-        alt: "playing card",
-        info: ["react app", "multiple play-able card games", "handdrawn dog-themed cards", "designed and written 100% by moi"],
-        progress: 50,
-        button: "not available yet"
-    },
     pacman = {
         title: "Pacman Exercise",
         subtitle: "an exercise manipulating the DOM",
@@ -50,6 +41,15 @@ export const Project = [
         progress: 100,
         button: "Check it out"
     },
+    bakes = {
+        title: "Brenbren Bakes",
+        subtitle: "a baking website showing my recipes",
+        img : Oven,
+        alt: "little oven cooking bread",
+        info: ["basic react application using tailwind", "provides recipes I have created/discovered", "cute pixel drawings of my bakes"],
+        progress: 25,
+        button: "not available yet"
+    },
     cocktail = {
         title: "Cocktail Brainstorm",
         subtitle: "tell us how you are feeling and we will suggest a cocktail",
@@ -59,13 +59,13 @@ export const Project = [
         progress: 15,
         button: "not available yet"
     },
-    bakes = {
-        title: "Brenbren Bakes",
-        subtitle: "a baking website showing my recipes",
-        img : Oven,
-        alt: "little oven cooking bread",
-        info: ["basic react application using tailwind", "provides recipes I have created/discovered", "cute pixel drawings of my bakes"],
-        progress: 25,
+    dogCard = {
+        title: "dog-a-doo card games",
+        subtitle: "Play dog-themed card games",
+        img: Dog,
+        alt: "playing card",
+        info: ["react app", "multiple play-able card games", "handdrawn dog-themed cards", "designed and written 100% by moi"],
+        progress: 50,
         button: "not available yet"
-    }
+    },
 ];
