@@ -5,59 +5,31 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import {
   Container,
   Row,
-  Col,
-  Card
+  Col
 } from "reactstrap";
 import React, { useState } from 'react';
 //container components
 import Header from './visuals/Header';
-import Box from './visuals/Box';
-import Contact from './visuals/Contact';
-//html components
-import P from './visuals/P';
 //navbar
 import Menu from './visuals/Menu';
 //other useful components
 import AboutMe from './visuals/AboutMe';
 import Video from './visuals/Video';
 import ProjectList from './components/ProjectList';
-import Resume from './visuals/Resume';
-import ProgressGauge from './visuals/ProgressGauge';
 
 
 function App() {
-  const [aboutMeOpen, setAboutMeOpen] = useState(false);
+  const [aboutMeOpen, setAboutMeOpen] = useState(true);
   const [projectsOpen, setProjectsOpen] = useState(false);
-  const [resumeOpen, setResumeOpen] = useState(false);
-  const [contactOpen, setContactOpen] = useState(false);
 
   const handleAboutMeOpen = () => {
     setAboutMeOpen(!aboutMeOpen);
     if(projectsOpen) setProjectsOpen(false);
-    if(resumeOpen) setResumeOpen(false);
-    if(contactOpen) setContactOpen(false);
   }
 
   const handleProjectsOpen = () => {
     setProjectsOpen(!projectsOpen);
     if(aboutMeOpen) setAboutMeOpen(false);
-    if(resumeOpen) setResumeOpen(false);
-    if(contactOpen) setContactOpen(false);
-  }
-
-  const handleResumeOpen = () => {
-    setResumeOpen(!resumeOpen);
-    if(aboutMeOpen) setAboutMeOpen(false);
-    if(projectsOpen) setProjectsOpen(false);
-    if(contactOpen) setContactOpen(false);
-
-  }
-
-  const handleContactOpen = () => {
-    setContactOpen(!contactOpen);
-    if(aboutMeOpen) setAboutMeOpen(false);
-    if(projectsOpen) setProjectsOpen(false);
-    if(resumeOpen) setResumeOpen(false);
   }
 
   return (
@@ -69,17 +41,15 @@ function App() {
       <Menu 
         onAboutMeOpen = { handleAboutMeOpen } 
         onProjectsOpen = { handleProjectsOpen } 
-        onResumeOpen = { handleResumeOpen } 
-        onContactOpen = { handleContactOpen }
-        >
+      >
       </Menu>
       {aboutMeOpen &&
             <Container>
             <Row className = "justify-content-around">
-              <Col className = "col-6 justify-content-around">
+              <Col xs = "12" sm = "6" className = "justify-content-around">
                 <AboutMe/>
               </Col>
-              <Col className = "col-6 justify-content-around">
+              <Col xs = "12" sm = "6" className = "col-6 justify-content-around">
                 <Video/>
               </Col>
             </Row>
@@ -91,20 +61,8 @@ function App() {
             <ProjectList/>
         </Container>
       }
-      {resumeOpen &&
-        <Container>
-          <Resume pdf = "./Images/Langille Resume ATS 2023.pdf" />
-        </Container>
-      }
-      {contactOpen &&
-        <Container>
-        <Col></Col>
-        <Contact/>
-        <Col></Col>
-        <Container className = "container-fluid pt-5"></Container>
-        </Container>
-      }
       <Container className = "container-fluid pt-5"></Container>
+      <div className = "mt-5"></div>
     </div>
   );
 }

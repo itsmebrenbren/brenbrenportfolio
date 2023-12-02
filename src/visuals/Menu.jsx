@@ -6,10 +6,10 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink
+  NavbarText
  } from 'reactstrap';
 
-export default function Menu({ onAboutMeOpen, onProjectsOpen, onResumeOpen, onContactOpen }) {
+export default function Menu({ onAboutMeOpen, onProjectsOpen }) {
   const [navOpen, setNavOpen] = useState(false);
 
   const toggleAboutMe = () => {
@@ -18,14 +18,6 @@ export default function Menu({ onAboutMeOpen, onProjectsOpen, onResumeOpen, onCo
 
   const toggleProjects = () => {
     onProjectsOpen();
-  }
-
-  const toggleResume = () => {
-    onResumeOpen();
-  }
-
-  const toggleContact = () => {
-    onContactOpen();
   }
 
   const toggle = () => setNavOpen(!navOpen);
@@ -38,23 +30,23 @@ export default function Menu({ onAboutMeOpen, onProjectsOpen, onResumeOpen, onCo
           <Collapse isOpen = { navOpen } navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                {/*<NavLink className = "navtext">About Me</NavLink>*/}
                 <button onClick = { toggleAboutMe } className = "button2">About Me</button>
               </NavItem>
               <NavItem>
-                {/*<NavLink className = "navtext">Projects</NavLink>*/}
                 <button onClick = { toggleProjects } className = "button2">Projects</button>
-              </NavItem>
-              <NavItem>
-                {/*<NavLink className = "navtext">Resume</NavLink>*/}
-                <button onClick = { toggleResume } className = "button2">Resume</button>
-              </NavItem>
-              <NavItem>
-                {/*<NavLink className = "navtext">Contact</NavLink>*/}
-                <button onClick = { toggleContact } className = "button2">Contact</button>
               </NavItem>
             </Nav>
           </Collapse>
+            <a href = "https://github.com/itsmebrenbren" target = "_blank" rel = "noopener noreferrer" 
+              className = "button2 a bg-brandy-rose float-end"
+            >
+              Github
+            </a>
+            <a href = "https://www.linkedin.com/in/brenna-baker-5a42651a0/" target = "_blank" rel = "noopener noreferrer" 
+              className = "button2 a bg-brandy-rose float-end"
+            >
+              LinkedIn
+            </a>
         </Navbar>
       </div>
     )
