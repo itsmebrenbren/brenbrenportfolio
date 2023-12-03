@@ -52,8 +52,14 @@ body {
 
 img {
   height: 80px;
-  width: 80px;
+  width: auto;
   margin: auto;
+}
+
+.img2 {
+  height: 200px;
+  width: auto;
+  margin: 2%;
 }
 
 .my-img {

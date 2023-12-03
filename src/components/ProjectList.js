@@ -13,6 +13,8 @@ export default function ProjectList() {
             subtitle = { project.subtitle }
             img = { project.img }
             alt = { project.alt }
+            img2 = { project.img2 }
+            alt2 = { project.alt2 }
             info = { project.info }
             progress = { project.progress }
             link = { project.link }
