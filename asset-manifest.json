@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.92c351d0.css",
+    "main.js": "/static/js/main.c6bcea72.js",
+    "static/js/787.e6521474.chunk.js": "/static/js/787.e6521474.chunk.js",
+    "static/media/Bbakes.webp": "/static/media/Bbakes.7c8076a1425c31bc9e7d.webp",
+    "static/media/Dogcard.webp": "/static/media/Dogcard.581748f0d2ebd1359d56.webp",
+    "static/media/cocktailpic.webp": "/static/media/cocktailpic.7e8bcf3455aca9ee6a6f.webp",
+    "static/media/pacpic.jpeg": "/static/media/pacpic.6387f8af545f00b0e42a.jpeg",
+    "static/media/VCR_OSD_MONO_1.001.ttf": "/static/media/VCR_OSD_MONO_1.001.10cf96d54dcd9af0486c.ttf",
+    "static/media/mappic.jpeg": "/static/media/mappic.550916c71929c417ee51.jpeg",
+    "static/media/eyepic.png": "/static/media/eyepic.835e3380ffe39fc53286.png",
+    "static/media/PortfolioPic1.jpg": "/static/media/PortfolioPic1.a80d4a5dae62e7d8f5d6.jpg",
+    "static/media/Righteous-Regular.ttf": "/static/media/Righteous-Regular.fd0110471f2228c1808a.ttf",
+    "static/media/ChicagoFLF.ttf": "/static/media/ChicagoFLF.cacc40068a3f040ad27a.ttf",
+    "static/media/DogaDooCG_Piixel.png": "/static/media/DogaDooCG_Piixel.4acbf01b251af87cf237.png",
+    "index.html": "/index.html",
+    "main.92c351d0.css.map": "/static/css/main.92c351d0.css.map",
+    "main.c6bcea72.js.map": "/static/js/main.c6bcea72.js.map",
+    "787.e6521474.chunk.js.map": "/static/js/787.e6521474.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92c351d0.css",
+    "static/js/main.c6bcea72.js"
+  ]
+}
