@@ -1,18 +1,16 @@
 import {
     Card,
     CardBody,
-    CardText,
     CardHeader
   } from "reactstrap";
+import MyVideo from "./YouTube";
 
 export default function Video(){
     return(
         <Card className = "card my-2 border-black bg-romantic">
             <CardHeader className = "h6 text-black text-center bg-brandy-rose">YouTube Video</CardHeader>
-            <CardBody color = "romantic">
-                <CardText className = "p text-dark-boi">
-                    YouTube video would go here.
-                </CardText>
+            <CardBody className = "romantic d-flex justify-content-center align-items-center" style={{ minHeight: "300px" }}>
+                <MyVideo />
             </CardBody>
         </Card>
     )

@@ -46,10 +46,10 @@ function App() {
       {aboutMeOpen &&
             <Container>
             <Row className = "justify-content-around">
-              <Col xs = "12" sm = "6" className = "justify-content-around">
+              <Col xs = "12" sm = "5" className = "justify-content-around">
                 <AboutMe/>
               </Col>
-              <Col xs = "12" sm = "6" className = "col-6 justify-content-around">
+              <Col xs = "12" sm = "7" className = "col-6 justify-content-around">
                 <Video/>
               </Col>
             </Row>
